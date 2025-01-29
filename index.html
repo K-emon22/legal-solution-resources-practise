@@ -21,18 +21,20 @@
     }
   </script>
 </head>
-<body>
+<body class="max-w-[1280px]">
 
 
 
 
-<header class="mx-[10%]">
+<header class="mx-[10%] mt-10">
 
 <nav>
-    <div class="navbar bg-base-100">
+    <div class="navbar bg-base-100 ">
+
+
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost  lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost  md:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-5 w-5"
@@ -46,27 +48,56 @@
                   d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </div>
+
             <ul
               tabindex="0"
               class="menu menu-sm dropdown-content bg-base-100  rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a>Item 1</a></li>
-              <li>
-                <a>Parent</a>
+              <li><a>Home</a></li>
+             
+
+              <li> <details>
+                <summary>Services</summary>
                 <ul class="p-2">
                   <li><a>Submenu 1</a></li>
                   <li><a>Submenu 2</a></li>
                 </ul>
-              </li>
-              <li><a>Item 3</a></li>
+              </details></li>
+              <li> <details>
+                <summary>Cases</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details></li>
+              <li> <details>
+                <summary>Blog</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details></li>
+              <li> <details>
+                <summary>Contact Us</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details></li>
+
+            
+                
             </ul>
           </div>
          <div class="flex my-auto gap-2">
-            <a class=" text-xl p-0 hidden lg:block "><img class="w-full" src="images/business.png" alt=""></a>
+            <a class=" text-xl p-0 hidden md:block my-auto "><img class="w-full" src="images/business.png" alt=""></a>
             <a class="btn btn-ghost text-xl   p-0 my-auto">daisyUI</a>
          </div>
 
         </div>
-        <div class="navbar-center hidden lg:flex">
+
+
+    
+        <div class="navbar-center hidden md:flex">
           <ul class="menu menu-horizontal px-1">
             <li><a>Home</a></li>
 
@@ -111,15 +142,63 @@
 
           </ul>
         </div >
+
+
         <div class="navbar-end ">
-          <a class="btn  bg-main md:w-56">Button</a>
+          <a class="btn  bg-main md:w-3/5">Button</a>
         </div>
       </div>
 </nav>
 
 
 
+
+
+
+
+
+<section class="mt-14">
+
+
+<div class="h-[500px] w-full bg-red-700 bg-[url('./images/banner.png')] bg-cover bg-center bg-no-repeat flex justify-center">
+
+
+
+
+
+        <div class="hero-content  text-center flex  ">
+          <div class="max-w-md">
+            <h1 class=" text-2xl sm:text-4xl font-bold text-white">We Provide Effective <br> Legal Solutions</h1>
+            <p class="py-6 text-white">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+            </p>
+           <div class="flex flex-row  gap-5  "> 
+
+            <input  class="w-full rounded-md px-4  py-4 sm:py-3 text-[9px] sm:text-[16px]" type="search" name="search" id="search" placeholder="Search your services"> 
+            <button class="btn border-none bg-main">Get Started</button>
+           </div>
+          </div>
+        </div>
+      </div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
 </header>
+
+
+
+
+
 
 
 
